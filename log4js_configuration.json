@@ -1,14 +1,14 @@
 {
-    "appenders": [
+    "appenders":[
         {
-            "type": "dateFile",
-            "filename": "private-bower.log",
-            "pattern": "-yyyy-MM-dd",
-            "alwaysIncludePattern": false
+            "type":"file",
+                "filename":"/home/private-bower/bower.log",
+                "maxLogSize":20480,
+                "backups":3
         },
         {
-            "type": "console"
+            "type":"console"    
         }
     ],
-    "replaceConsole": true
+    "replaceConsole":true
 }
